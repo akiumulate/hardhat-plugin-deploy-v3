@@ -18,4 +18,5 @@ task("deploy-uniswap", "Deploys Uniswap V3 contracts", async (args, hre) => {
     table.push([item, contracts[item].address]);
   }
   console.info(table.toString());
+  return contracts;
 });
