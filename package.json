@@ -15,11 +15,12 @@
     "uniswap"
   ],
   "scripts": {
-    "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
-    "lint": "tslint --config tslint.json --project tsconfig.json",
-    "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "build": "tsc",
-    "watch": "tsc -w"
+      "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
+      "lint": "tslint --config tslint.json --project tsconfig.json",
+      "test": "mocha --exit --recursive 'test/**/*.test.ts'",
+      "prepare": "npm run build",
+      "build": "tsc",
+      "watch": "tsc -w"
   },
   "files": [
     "dist/",
