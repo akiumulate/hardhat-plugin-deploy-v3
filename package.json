@@ -19,6 +19,7 @@
     "lint": "tslint --config tslint.json --project tsconfig.json",
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
     "build": "tsc",
+    "prepare": "npm run build",
     "watch": "tsc -w"
   },
   "files": [
@@ -49,7 +50,7 @@
   },
   "dependencies": {
     "@uniswap/v3-core": "1.0.0",
-    "@uniswap/v3-periphery": "^1.0.1",
+    "@uniswap/v3-periphery": "1.2.0",
     "cli-table3": "^0.6.0",
     "tsc": "^2.0.4"
   }
