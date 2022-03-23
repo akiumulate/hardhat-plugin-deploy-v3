@@ -5,12 +5,12 @@ export declare class UniswapV3Deployer {
     }>;
     deployer: Signer;
     constructor(deployer: Signer);
-    deployFactory(): Promise<any>;
-    deployWETH9(): Promise<any>;
-    deployRouter(factoryAddress: string, weth9Address: string): Promise<any>;
-    deployNFTDescriptorLibrary(): Promise<any>;
+    deployFactory(): Promise<Contract>;
+    deployWETH9(): Promise<Contract>;
+    deployRouter(factoryAddress: string, weth9Address: string): Promise<Contract>;
+    deployNFTDescriptorLibrary(): Promise<Contract>;
     deployPositionDescriptor(nftDescriptorLibraryAddress: string, weth9Address: string): Promise<Contract>;
-    deployNonfungiblePositionManager(factoryAddress: string, weth9Address: string, positionDescriptorAddress: string): Promise<any>;
+    deployNonfungiblePositionManager(factoryAddress: string, weth9Address: string, positionDescriptorAddress: string): Promise<Contract>;
     private deployContract;
 }
 //# sourceMappingURL=UniswapV3Deployer.d.ts.map

@@ -1,4 +1,5 @@
-export declare const MaxUint128: any;
+import { BigNumber } from 'ethers';
+export declare const MaxUint128: BigNumber;
 export declare enum FeeAmount {
     LOW = 500,
     MEDIUM = 3000,

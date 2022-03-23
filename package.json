@@ -18,9 +18,9 @@
     "lint:fix": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
     "lint": "tslint --config tslint.json --project tsconfig.json",
     "test": "mocha --exit --recursive 'test/**/*.test.ts'",
-    "build": "tsc",
+    "build": "npm install typescript && npx -p typescript tsc",
     "prepare": "npm run build",
-    "watch": "tsc -w"
+    "watch": "npm install typescript && npx -p typescript tsc -w"
   },
   "files": [
     "dist/",
@@ -43,7 +43,7 @@
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "peerDependencies": {
     "hardhat": "^2.0.0"
