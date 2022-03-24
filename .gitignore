@@ -1,4 +1,5 @@
-#/dist
+# Build artefacts
+dist/
 
 # Logs
 logs
